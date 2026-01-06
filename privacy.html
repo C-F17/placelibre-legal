@@ -4,44 +4,54 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Politique de confidentialité — PlaceLibre</title>
+  <meta name="robots" content="index,follow" />
   <style>
-    body{font-family:system-ui,-apple-system,Roboto,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.5;color:#111}
+    :root{color-scheme:light dark}
+    body{font-family:system-ui,-apple-system,Roboto,Arial,sans-serif;max-width:920px;margin:40px auto;padding:0 16px;line-height:1.6}
     h1,h2{line-height:1.2}
+    nav{margin-bottom:18px}
     .muted{color:#666}
-    code{background:#f3f3f3;padding:2px 6px;border-radius:6px}
     a{color:#0b57d0;text-decoration:underline}
-    a:hover{opacity:.9}
+    a:visited{color:#551a8b}
+    code{background:#f3f3f3;padding:2px 6px;border-radius:6px}
+    .box{border:1px solid #e5e5e5;border-radius:12px;padding:12px;margin:14px 0}
   </style>
 </head>
 <body>
+  <nav class="muted">
+    <a href="./index.html">Accueil</a> ·
+    <a href="./privacy.html">Confidentialité</a> ·
+    <a href="./terms.html">Conditions</a> ·
+    <a href="./delete-account.html">Suppression de compte</a>
+  </nav>
+
   <h1>Politique de confidentialité — PlaceLibre</h1>
   <p class="muted">Dernière mise à jour : 2026-01-06</p>
 
   <h2>1) Responsable</h2>
   <p>
-    Responsable du traitement : <strong>PlaceLibre</strong>
-    (contact :
-    <a href="mailto:placelibrecontact@gmail.com"><strong>placelibrecontact@gmail.com</strong></a>).
+    Responsable du traitement : <strong>PlaceLibre</strong> (contact :
+    <a href="mailto:placelibrecontact@gmail.com">placelibrecontact@gmail.com</a>).
   </p>
 
   <h2>2) Données collectées</h2>
   <ul>
     <li><strong>Email</strong> (création/connexion de compte).</li>
-    <li><strong>Localisation</strong> (si autorisée) pour afficher les places proches et publier une place.</li>
-    <li><strong>Données techniques</strong> minimales (diagnostic d’erreurs, sécurité, journaux/Logs comme l’IP lors des appels API).</li>
+    <li><strong>Localisation</strong> (si autorisée) pour afficher les places proches et publier une place. La localisation peut être précise.</li>
+    <li><strong>Données techniques</strong> minimales (ex : journaux techniques, diagnostic d’erreurs, sécurité).</li>
   </ul>
 
   <h2>3) Finalités</h2>
   <ul>
     <li>Authentification et gestion du compte.</li>
-    <li>Affichage et partage de places de parking en temps réel.</li>
-    <li>Sécurité et prévention des abus.</li>
+    <li>Affichage et partage de places de parking signalées par les utilisateurs.</li>
+    <li>Sécurité, prévention des abus et amélioration de la stabilité.</li>
   </ul>
 
   <h2>4) Base légale</h2>
   <ul>
     <li>Exécution du service (compte, fonctionnement de l’app).</li>
-    <li>Consentement pour la localisation (tu peux refuser).</li>
+    <li>Consentement pour la localisation (tu peux refuser et modifier ce choix dans les réglages du téléphone).</li>
     <li>Intérêt légitime pour la sécurité et la stabilité.</li>
   </ul>
 
@@ -51,22 +61,32 @@
     <li><strong>Firebase Authentication</strong> : authentification des comptes (email/mot de passe).</li>
     <li><strong>Render</strong> : hébergement du serveur/API.</li>
     <li><strong>Neon</strong> : hébergement de la base de données PostgreSQL.</li>
-    <li><strong>GitHub Pages</strong> : hébergement des documents légaux (données techniques de consultation : ex. IP/logs).</li>
+    <li><strong>Services de cartographie (Apple/Google selon l’OS)</strong> : affichage de la carte. Ces services peuvent recevoir des données techniques (ex : IP) nécessaires au fonctionnement.</li>
+    <li><strong>GitHub Pages</strong> : hébergement des documents légaux (données techniques de consultation : ex. IP/logs côté hébergeur).</li>
   </ul>
 
   <h2>6) Conservation</h2>
-  <p>Les données de compte sont conservées tant que le compte existe. Les contenus publiés (ex: places) peuvent expirer automatiquement selon les règles de l’app.</p>
+  <ul>
+    <li>Les données de compte sont conservées tant que le compte existe.</li>
+    <li>Les contenus publiés (ex : places) expirent automatiquement selon les règles de l’app (délai court).</li>
+    <li>Des données peuvent être conservées plus longtemps si nécessaire pour des raisons légitimes (sécurité, fraude, obligations légales).</li>
+  </ul>
 
   <h2>7) Tes droits</h2>
-  <p>
-    Tu peux demander l’accès, la rectification et la suppression.
-    Pour supprimer ton compte, voir <a href="./delete-account.html">Suppression de compte</a>.
-  </p>
+  <ul>
+    <li>Accès, rectification, suppression, limitation et opposition (selon les cas).</li>
+    <li>Retrait du consentement (ex : localisation) à tout moment via les réglages du téléphone.</li>
+    <li>Réclamation possible auprès de l’autorité de contrôle (ex : CNIL en France).</li>
+  </ul>
+  <div class="box">
+    <strong>Suppression de compte</strong> : pour supprimer ton compte et les données associées, voir
+    <a href="./delete-account.html">Suppression de compte</a>.
+  </div>
 
-  <h2>8) Contact</h2>
-  <p>
-    Contact :
-    <a href="mailto:placelibrecontact@gmail.com"><strong>placelibrecontact@gmail.com</strong></a>
-  </p>
+  <h2>8) Sécurité</h2>
+  <p>Nous mettons en place des mesures raisonnables pour protéger les données (contrôle d’accès, sécurisation des échanges, limitation des accès).</p>
+
+  <h2>9) Contact</h2>
+  <p>Contact : <a href="mailto:placelibrecontact@gmail.com">placelibrecontact@gmail.com</a></p>
 </body>
 </html>
