@@ -1,4 +1,3 @@
-<!-- privacy.html -->
 <!doctype html>
 <html lang="fr">
 <head>
@@ -6,12 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Politique de confidentialité — PlaceLibre</title>
   <style>
-    body{font-family:system-ui,-apple-system,Roboto,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.5;color:#111}
+    :root { color-scheme: light; }
+    body{font-family:system-ui,-apple-system,Roboto,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.5;color:#111;background:#fff}
     h1,h2{line-height:1.2}
     .muted{color:#666}
     code{background:#f3f3f3;padding:2px 6px;border-radius:6px}
-    a{color:#1a73e8;text-decoration:underline}
-    a:visited{color:#551A8B}
+    a{color:#0b57d0;text-decoration:underline}
+    a:visited{color:#0b57d0}
     a:hover{opacity:.9}
   </style>
 </head>
@@ -21,8 +21,7 @@
 
   <h2>1) Responsable</h2>
   <p>
-    Responsable du traitement : <strong>PlaceLibre</strong>
-    (contact :
+    Responsable du traitement : <strong>PlaceLibre</strong> (contact :
     <a href="mailto:placelibrecontact@gmail.com"><strong>placelibrecontact@gmail.com</strong></a>).
   </p>
 
@@ -30,7 +29,7 @@
   <ul>
     <li><strong>Email</strong> (création/connexion de compte).</li>
     <li><strong>Localisation</strong> (si autorisée) pour afficher les places proches et publier une place.</li>
-    <li><strong>Données techniques</strong> minimales (diagnostic d’erreurs, sécurité).</li>
+    <li><strong>Données techniques</strong> minimales (sécurité, diagnostic d’erreurs, journaux techniques).</li>
   </ul>
 
   <h2>3) Finalités</h2>
@@ -54,12 +53,25 @@
     <li><strong>Render</strong> : hébergement du serveur/API.</li>
     <li><strong>Neon</strong> : hébergement de la base de données PostgreSQL.</li>
   </ul>
+  <p class="muted">
+    Ces prestataires peuvent traiter des données en dehors de l’Espace Économique Européen selon leur infrastructure. Le cas échéant,
+    des garanties appropriées peuvent être mises en place (ex : clauses contractuelles types).
+  </p>
 
   <h2>6) Conservation</h2>
-  <p>Les données de compte sont conservées tant que le compte existe. Les contenus publiés (ex: places) peuvent expirer automatiquement selon les règles de l’app.</p>
+  <p>
+    Les données de compte sont conservées tant que le compte existe. Les contenus publiés (ex : places) peuvent expirer automatiquement
+    selon les règles de l’app. Les données techniques (logs) sont conservées pendant une durée limitée nécessaire à la sécurité et au diagnostic.
+  </p>
 
   <h2>7) Tes droits</h2>
-  <p>Tu peux demander l’accès, la rectification et la suppression. Pour supprimer ton compte, voir <a href="./delete-account.html">Suppression de compte</a>.</p>
+  <p>
+    Tu peux demander l’accès, la rectification et la suppression. Pour supprimer ton compte, voir
+    <a href="./delete-account.html">Suppression de compte</a>.
+  </p>
+  <p class="muted">
+    Tu peux aussi déposer une réclamation auprès de l’autorité de contrôle compétente (en France : la CNIL).
+  </p>
 
   <h2>8) Contact</h2>
   <p>
